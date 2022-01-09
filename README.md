@@ -16,13 +16,13 @@ As can be seen in the image below, only two of the twelve green energy stocks ha
 
 ### Code and Execution Times
 #### Original Code
-Stock data for the twelve green energy companies was imported into EXCEL and then VBA code was created to analyze the data. This code cycles through the data looking for each of the twelve sticker codes individually.  When there is a match to the sticker code, it adds up the total daily volume and also determines the starting and ending price of the stock for the year.  A screen shot of the code below, shows that all the stock data is filtered through 12 times (starting with "for i = 0 to 11"). Hence, for each run through only about 1 in 12 or 8.3% of the data is being utilized.  While the data outcomes are correct, it is an inefficient way to make calculations.   
+Stock data for the twelve green energy companies was imported into EXCEL and then VBA code was created to analyze the data. This code cycles through the data looking for each of the twelve sticker codes individually.  When there is a match to the sticker code, it adds up the total daily volume and also determines the starting and ending price of the stock for the year.  A screen shot of the code below, shows that all the stock data is filtered through 12 times (starting with "for i = 0 to 11"). Hence, for each run through only about 1 in 12 or 8.3% of the data is being utilized.  While the data outcomes are correct, it is an inefficient way to make calculations.  The time to execute the code for both the 2017 and 2018 data was aroudn 0.75 s.    
 
 ![screenshot showing a portion of the VBA code used to analyze the stock data](Screenshots/allstocksanalysis.png)
 
 
 #### Refactored Code
-In order to make the code more efficient, 
+In order to make the code more efficient, arrays were created to hold total daily volume, starting price and ending price of the green stocks.  The screenshot below shows how the arrays were created and how this time the data for the green stocks is only run filtered one time (starting with "for i = 2 to RowCount").  Each row of the EXCEL data is checked to see which stock the information pertains to and then is placed into a corresponding array.  Because the data is only run through one time, as opposed to twelve times in the original code, the execution time is only about 0.15 s.  This execution time is six times less than the original code.  Examples of the code execution time can be seen in the EXCEL data file screenshots above.     
 
 ![screenshot showing a portion of the VBA code used to analyze the stock data](Screenshots/refactored_allstocksanalysis.png)
 
