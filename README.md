@@ -19,7 +19,7 @@ Stock data for the twelve green energy companies was imported into EXCEL and the
 
 #### Refactored Code
 In order to make the code more efficient, 
-![screenshot showing a portion of the VBA code used to analyze the stock data](Screenshots/allstocksanalysis.png)
+![screenshot showing a portion of the VBA code used to analyze the stock data](Screenshots/refactored_allstocksanalysis.png)
 
 ## Summary
 ### Advantages and Disadvantages of Refactored Code
