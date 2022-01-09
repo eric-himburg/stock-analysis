@@ -14,16 +14,19 @@ As can be seen in the image below, only two of the twelve green energy stocks ha
 ### Code and Execution Times
 #### Original Code
 Stock data for the twelve green energy companies was imported into EXCEL and then VBA code was created to analyze the data.  
-![screenshot of the Excel file with Kickstarter play data only being displayed](screenshots/kickstarter_data_filtered.png)
+![screenshot showing a portion of the VBA code used to analyze the stock data](Screenshots/allstocksanalysis.png)
+
+
+#### Refactored Code
+In order to make the code more efficient, 
+![screenshot showing a portion of the VBA code used to analyze the stock data](Screenshots/allstocksanalysis.png)
 
 ## Summary
 ### Advantages and Disadvantages of Refactored Code
-A plot of the theater outcomes versus launch data is shown below.  It can concluded by looking at the graph that more plays are funded in the summer months versus the winter months.  Specifically, there is a peak in successfully funded plays starting in May and slowly declining through December.  Notice how the amount of failed and canceled plays stays relatively the same throughout the year, with some modest variability.  Hence, based on this data the best chance one has to have a play successfully funded would be in the month of May.  The worst time to get a play funded would be in December.  
-![theater outcomes versus month line graph](resources/Theater_Outcomes_vs_Launch.png)
+
 
 ### Application to Current VBA Code
-A plot of the play outcomes based on funding goals is shown below.  A general trend that can be concluded from the graph is the higher the funding goal the less likely the play is to be successful.  Hence, if one wishes to have a successfully funded play, a lower funding goal is more likely to result in success.  These trends do reverese themselves temporarily in the mid-funding ranges of 35k - 50, which may be due to the type of play being funded or the type of donors solicited to fund these plays. An interesting observation is that none of the plays funded were canceled.  Meaning, all plays that met their funding goals were successfully produced.  
-![outcomes of plays based upon funding goals](resources/Outcomes_vs_Goals.png)
+
 
  
 
