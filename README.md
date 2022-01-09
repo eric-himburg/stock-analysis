@@ -4,9 +4,8 @@ There are many different forms of green energy such as hydro, geothermal, wind a
 
 ## Results
 ### Green Stock Performance
-As can be seen in the image below, ten of the twelve green energy stocks had positive returns in 2017.
-![screenshot of the Excel file with Kickstarter play data only being displayed](screenshots/kickstarter_data_filtered.png)
-
+As can be seen in the image below, eleven of the twelve green energy stocks had positive returns in 2017.  The three stocks with the best returns included DAQO New Energy Corp (DQ), Enphase Energy (ENPH) and Solar Edge Technologies (SEDG).  All of the stocks listed have total daily volumes above the 25 million criteria used to determine if a stock is a more reliable investment.  However, it should be noted that DQ's total daily volume is just barely above this criterion, being traded several times less than the other green stocks. Also, of note is that while SunRun Inc. (RUN) only had a modest return of 5.5%, it had one of largest total daily volumes of 267 million.  
+![screenshot of the Excel file with 2017 green energy stocks](Resources/VBA_Challenge_2017.png)
 
 
 ### Code and Execution Times
