@@ -33,6 +33,9 @@ There are many reasons one may wish to refactor code.  The design of the origina
 The disadvantages of refactoring code are twofold.  First, nothing new is being created when refactoring.  Hence, you are creating code to solve a problem that has already been solved.  Second, the time commitment to refactor code can be large.  A new design must be created, coded, tested and debugged, without a guarantee that the end product will be better than the initial product.  If a coding project has time constraints, it may not be feasible to refactor it.    
 
 ### Application to Current VBA Code
+The original VBA code used to analzye green stocks was refactored.  By utilizing arrays, the time to execute was lowered from 0.75 s to 0.15 s.  Hence, the refactoring did lower the excecution time significantly as expected.  The arrays in the refactored code have the advantage of being easily expanded to accompany more than the twelve stocks reviewed in this project.  Hence, the new code is more adaptable than the original code.  Future projects could easily add more green stocks to be analyzed with minimal coding changes.  
+
+The downside to creating the refactored code was that an additional day was needed to create code that ultimately produced identical results as the original.  Additionally, the output time saved was negligible in the frame of reference of the end user.  To the end user, 0.75 s and 0.15 s feels the same.  
 
 
  
