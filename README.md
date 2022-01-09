@@ -12,7 +12,8 @@ As can be seen in the image below, only two of the twelve green energy stocks ha
 ![screenshot of the Excel file with 2018 green energy stocks](Resources/VBA_Challenge_2018.png)
 
 ### Code and Execution Times
-A picture of the filtered data can be seen below.  There were three main challenges when working with this data.  First, all of the dates such as the funding deadline were intially a Unix timestamp.  This needed to be converted into a standard date format.  Second, the categories and subcategories of all the different Kickstarter campaign were compiled in the same column.  It was necessary to separate each one of these into a category and subcategory.  Third, some the plays did not have any backers.  This led to division by zero errors when calculating the average donor donation.  It was necessary to change these from errors to zero amounts.
+#### Original Code
+Stock data for the twelve green energy companies was imported into EXCEL and then VBA code was created to analyze the data.  
 ![screenshot of the Excel file with Kickstarter play data only being displayed](screenshots/kickstarter_data_filtered.png)
 
 ## Summary
