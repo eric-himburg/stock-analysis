@@ -6,19 +6,24 @@ There are many different forms of green energy such as hydro, geothermal, wind a
 ### Green Stock Performance
 #### 2017
 As can be seen in the image below, eleven of the twelve green energy stocks had positive returns in 2017.  The three stocks with the best returns included DAQO New Energy Corp (DQ), Enphase Energy (ENPH) and Solar Edge Technologies (SEDG).  All of the stocks listed have total daily volumes above the 25 million criteria used to determine if a stock is a more reliable investment.  However, it should be noted that DQ's total daily volume is just barely above this criterion, being traded several times less than the other green stocks. Also, of note is that while SunRun Inc. (RUN) only had a modest return of 5.5%, it had one of largest total daily volumes of 267 million.  
+
 ![screenshot of the Excel file with 2017 green energy stocks](Resources/VBA_Challenge_2017.png)
+
 #### 2018
 As can be seen in the image below, only two of the twelve green energy stocks had positive returns in 2018.  The two stocks that performed well, with over 80% returns, included Enphase Energy and SunRun Inc.  Additionally, both of these stocks had total daily volumes in the hundreds of millions, indicating they are a less risky investment option.  For two years straight, Enphase Energy and SunRun Inc. have have positive returns and large total daily volumes.  All other stocks, including DAQO New Energy Corp, had negative returns for 2018.     
+
 ![screenshot of the Excel file with 2018 green energy stocks](Resources/VBA_Challenge_2018.png)
 
 ### Code and Execution Times
 #### Original Code
-Stock data for the twelve green energy companies was imported into EXCEL and then VBA code was created to analyze the data.  
+Stock data for the twelve green energy companies was imported into EXCEL and then VBA code was created to analyze the data. This code cycles through the data looking for each of the twelve sticker codes individually.  When there is a match to the sticker code, it adds up the total daily volume and also determines the starting and ending price of the stock for the year.  A screen shot of the code below, shows that all the stock data is filtered through 12 times (starting with "for i = 0 to 11"). Hence, for each run through only about 1 in 12 or 8.3% of the data is being utilized.  While the data outcomes are correct, it is an inefficient way to make calculations.   
+
 ![screenshot showing a portion of the VBA code used to analyze the stock data](Screenshots/allstocksanalysis.png)
 
 
 #### Refactored Code
 In order to make the code more efficient, 
+
 ![screenshot showing a portion of the VBA code used to analyze the stock data](Screenshots/refactored_allstocksanalysis.png)
 
 ## Summary
